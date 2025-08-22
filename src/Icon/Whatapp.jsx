@@ -4,15 +4,15 @@ import { IoLogoWhatsapp } from "react-icons/io";
 const Whatapps = () => {
   return (
     <div>
-      <div className="fixed bottom-40 left-1 ">
-        <div className="bg-green-500 p-2 rounded-r-xl cursor-pointer hover:bg-green-600 shadow-2xl shadow-green-800">
+      <div className="fixed bottom-55 right-1 ">
+        <div className="bg-green-500 p-2 rounded-l-xl cursor-pointer hover:bg-green-600 shadow-2xl shadow-green-800">
           <a
-            href="https://www.whatsapp.com" // Replace with your actual WhatsApp number
+            href="https://wa.me/918419003734"
             target="_blank"
             rel="noopener noreferrer"
             className=""
           >
-            <IoLogoWhatsapp className="text-white text-5xl" />
+            <IoLogoWhatsapp className="text-white text-3xl" />
           </a>
         </div>
       </div>

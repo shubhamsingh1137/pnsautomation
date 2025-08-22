@@ -3,7 +3,11 @@ import matlabImage from "../assets/images/matlab.jpg";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
+import autocadImage from "../assets/images/autocad.jpg";
+import automation from "../assets/images/automation.jpg";
+import embedded from "../assets/images/embedded.jpg";
+import plcScadaImage from "../assets/images/plc-scada1.jpg";
+import web from "../assets/images/web.jpg";
 const courses = [
   {
     id: 1,
@@ -20,66 +24,66 @@ const courses = [
   },
   {
     id: 2,
-    image: matlabImage,
-    title: "Matlab Course",
+    image: autocadImage,
+    title: "Autocad Course",
     isNew: true,
-    classes: "18 Classes",
-    hours: "60 Hours",
+    classes: "25 Classes",
+    hours: "70 Hours",
     level: "Professionals",
     mode: "Fully Interactive Online",
-    date: "24th August",
+    date: "Comming Soon",
     timing: "Weekends (10:00 AM)",
-    seatsLeft: "17 seats left",
+    seatsLeft: "18 seats left",
   },
   {
     id: 3,
-    image: matlabImage,
-    title: "Matlab Course",
+    image: automation,
+    title: "Full Automation Course",
     isNew: true,
-    classes: "18 Classes",
-    hours: "60 Hours",
+    classes: "35 Classes",
+    hours: "108 Hours",
     level: "Professionals",
     mode: "Fully Interactive Online",
-    date: "24th August",
+    date: "Coming Soon",
     timing: "Weekends (10:00 AM)",
     seatsLeft: "17 seats left",
   },
   {
     id: 4,
-    image: matlabImage,
-    title: "Matlab Course",
+    image: embedded,
+    title: "Embedded Course",
     isNew: true,
-    classes: "18 Classes",
+    classes: "35 Classes",
     hours: "60 Hours",
     level: "Professionals",
     mode: "Fully Interactive Online",
-    date: "24th August",
+    date: "Comming Soon",
     timing: "Weekends (10:00 AM)",
     seatsLeft: "17 seats left",
   },
   {
     id: 5,
-    image: matlabImage,
-    title: "Matlab Course",
+    image: plcScadaImage,
+    title: "Plc-Scada Course",
     isNew: true,
-    classes: "18 Classes",
+    classes: "20 Classes",
     hours: "60 Hours",
     level: "Professionals",
     mode: "Fully Interactive Online",
-    date: "24th August",
+    date: "Coming Soon",
     timing: "Weekends (10:00 AM)",
     seatsLeft: "17 seats left",
   },
   {
     id: 6,
-    image: matlabImage,
-    title: "Matlab Course",
+    image: web,
+    title: "Website Desiging Course",
     isNew: true,
-    classes: "18 Classes",
+    classes: "25 Classes",
     hours: "60 Hours",
     level: "Professionals",
     mode: "Fully Interactive Online",
-    date: "24th August",
+    date: "Coming Soon",
     timing: "Weekends (10:00 AM)",
     seatsLeft: "17 seats left",
   },
@@ -108,9 +112,9 @@ const Upcomingbatches = () => {
 
   return (
     <>
-      <div className="p-5 text-black">
+      <div className="p-3 text-black">
         <p className="text-4xl font-extrabold mb-2">Upcoming Batches</p>
-        <p className="text-2xl font-semibold">
+        <p className="text-xl font-semibold">
           "Real stories from real learners — discover how personalized guidance
           helped them achieve their career goals."
         </p>
@@ -118,8 +122,12 @@ const Upcomingbatches = () => {
 
       <Slider {...settings}>
         {courses.map((course) => (
-          <div key={course.id} className="p-3">
-            <div className="rounded-2xl overflow-hidden shadow-lg border p-4 transition-transform duration-300 hover:scale-105 group bg-white">
+          <div key={course.id} className="px-2">
+            {" "}
+            {/* `p-3` ko `px-2` kar diya */}
+            <div className="rounded-2xl overflow-hidden shadow-lg border p-3 transition-transform duration-300 hover:scale-105 group bg-white">
+              {" "}
+              {/* `p-4` ko `p-3` kar diya */}
               <div className="overflow-hidden rounded-xl">
                 <img
                   src={course.image}
@@ -128,7 +136,9 @@ const Upcomingbatches = () => {
                 />
               </div>
               <div className="py-4">
-                <div className="text-xl font-semibold flex items-center gap-2">
+                <div className="text-lg font-semibold flex items-center gap-2">
+                  {" "}
+                  {/* `text-xl` ko `text-lg` kar diya */}
                   {course.title}
                   {course.isNew && (
                     <span className="text-xs bg-green-100 text-green-700 px-2 py-0.5 rounded-full">
@@ -136,7 +146,9 @@ const Upcomingbatches = () => {
                     </span>
                   )}
                 </div>
-                <div className="flex flex-wrap gap-2 my-2">
+                <div className="flex flex-wrap gap-1 my-2">
+                  {" "}
+                  {/* `gap-2` ko `gap-1` kar diya */}
                   <span className="bg-blue-100 text-blue-800 px-2 py-1 rounded-md text-sm">
                     {course.classes}
                   </span>

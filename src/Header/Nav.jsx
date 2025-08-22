@@ -51,7 +51,9 @@ const Nav = () => {
         {/* Right Side */}
         <div className="flex items-center space-x-4">
           <button
-            onClick={() => navigate("/login")}
+            onClick={() =>
+              window.open("https://forms.gle/aSxC2XZkXqfygNny8", "_blank")
+            }
             className="bg-purple-600 hover:bg-purple-700 transition text-sm font-semibold text-white px-4 py-2 rounded-full"
           >
             Get Started Now →

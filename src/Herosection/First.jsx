@@ -1,33 +1,21 @@
 import React from "react";
-import video from "../assets/vidios/video1.mp4";
 
 const First = () => {
   return (
-    <div className="relative w-full h-screen overflow-hidden">
-      <video
-        autoPlay
-        loop
-        muted
-        playsInline
-        src={video}
-        className="absolute top-0 left-0 w-full h-full object-cover z-0"
-      />
-
-      {/* Overlay Content */}
-      <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-4">
-        <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-blue-800 mb-6  inline-block shadow-2xl px-4 py-2 rounded-lg">
-          Welcome to PNS AUTOMATION
+    <section className="min-h-screen bg-white text-white flex items-center justify-center">
+      <div className="text-center px-4">
+        <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-gray-800 mb-6 inline-block px-4 py-2 rounded-lg">
+          WELCOME TO PNS AUTOMATION
         </h1>
-
-        <div className="space-y-4 text-blue-800 text-xl sm:text-2xl font-semibold max-w-3xl">
+        <div className="space-y-4 text-black text-xl sm:text-2xl font-semibold max-w-3xl mx-auto">
           <p>
-            Electronics is not just circuits, it's the art of making ideas come
-            alive.
+            From Training and Home Automation to Medical Device Manufacturing
+            and Solar Energy— we make technology the foundation of your
+            progress. Under one roof, we turn your every vision into reality
           </p>
-          <p>The spark of innovation begins with understanding electronics.</p>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

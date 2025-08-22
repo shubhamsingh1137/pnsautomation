@@ -14,6 +14,7 @@ import Twitter from "../Icon/Twitter";
 import Facebook from "../Icon/Facebook";
 import Email from "../Icon/Email";
 import Phone from "../Icon/Phone";
+import Third from "../Herosection/Third";
 
 const Home = () => {
   return (
@@ -22,6 +23,7 @@ const Home = () => {
       <First />
 
       <Second />
+      <Third />
       <Email />
       <Phone />
       <Whatapps />
